@@ -1,12 +1,12 @@
 .dashboard-container {
   padding: 2rem 1rem;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 .filter-box {
   margin-bottom: 1.5rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 .filter-box input {
   padding: 0.5rem 1rem;
@@ -28,6 +28,9 @@
   justify-content: center;
 }
 @media (max-width: 600px) {
+  .dashboard-container {
+    padding: 1rem 0.3rem;
+  }
   .pool-cards-grid {
     flex-direction: column;
     gap: 1rem;

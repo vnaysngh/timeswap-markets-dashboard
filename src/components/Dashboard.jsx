@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import poolsData from "../poolsData";
 import MarketTable from "./MarketTable";
-import "./Dashboard.css";
+import "../styles/Dashboard.css";
 
 const Dashboard = () => {
   const [filter, setFilter] = useState("");

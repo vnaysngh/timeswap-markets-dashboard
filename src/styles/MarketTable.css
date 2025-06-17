@@ -9,7 +9,6 @@
 .market-table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 600px;
 }
 .market-table th,
 .market-table td {
@@ -43,15 +42,55 @@
   font-weight: 500;
   letter-spacing: 1px;
 }
+.market-table tbody tr {
+  background: #23283a;
+}
 @media (max-width: 700px) {
   .market-table-container {
     border-radius: 0;
     box-shadow: none;
     padding: 0;
+    background: none;
+    overflow-x: auto;
   }
-  .market-table th,
+  .market-table {
+    width: 100%;
+    border: 0;
+    background: none;
+  }
+  .market-table thead {
+    display: none;
+  }
+  .market-table tbody tr {
+    display: block;
+    margin-bottom: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 0.7rem 0.7rem 0.2rem 0.7rem;
+    background: #23283a;
+  }
   .market-table td {
-    padding: 0.7rem 0.5rem;
-    font-size: 0.97rem;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.6rem 0.2rem;
+    border: none;
+    font-size: 1rem;
+    background: none;
+    position: relative;
+  }
+  .market-table td::before {
+    content: attr(data-label) ": ";
+    font-weight: 600;
+    color: #7ec4fa;
+    min-width: 120px;
+    display: inline-block;
+    margin-right: 0.5rem;
+    font-size: 0.98rem;
+  }
+  .token-icons {
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
   }
 }

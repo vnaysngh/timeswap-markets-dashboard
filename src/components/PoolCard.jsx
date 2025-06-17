@@ -1,5 +1,5 @@
 import React from "react";
-import "./PoolCard.css";
+import "../styles/PoolCard.css";
 
 const PoolCard = ({ pool }) => (
   <div className="pool-card">
