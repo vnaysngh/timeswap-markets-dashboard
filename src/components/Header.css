@@ -1,0 +1,30 @@
+.dashboard-header {
+  background: #181c24;
+  color: #fff;
+  padding: 1.5rem 2rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #23283a;
+}
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.dashboard-navbar {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.1rem;
+}
+.dashboard-navbar a {
+  color: #7ec4fa;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.dashboard-navbar a:hover {
+  color: #fff;
+}
+.dashboard-navbar span {
+  color: #4a4e5a;
+}

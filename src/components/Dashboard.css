@@ -1,0 +1,36 @@
+.dashboard-container {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.filter-box {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.filter-box input {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #23283a;
+  background: #181c24;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.filter-box input:focus {
+  border: 1.5px solid #7ec4fa;
+}
+.pool-cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  .pool-cards-grid {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+}
